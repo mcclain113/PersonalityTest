@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalityTest.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="Image"
+                Source="spider_man.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="are you spiderman?" />
+
+            <Label x:Name="Question" FontAttributes="Bold" Text="Question 1"/>
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Button x:Name="True" Text="True" BackgroundColor="Green" Clicked="True_Clicked"/>
+
+
+                <Button x:Name="False" Text="False" BackgroundColor="Firebrick" Clicked="False_Clicked"/>
+            </StackLayout>
+            <Label  FontAttributes="Bold" Text=""/>
+            <Button x:Name="Clear" Text="Refresh" HorizontalOptions="Center" BackgroundColor="Brown" Clicked="Refresh_Clicked"/>
+            <Label FontAttributes="Bold" Text=""/>
+            <Button x:Name="Swipe" Text="Click to Swipe" HorizontalOptions="Center" BackgroundColor="Purple" Clicked="Swipe_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

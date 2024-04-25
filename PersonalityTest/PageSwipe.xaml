@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalityTest.PageSwipe">
+    <ContentPage.Content>
+        <StackLayout>
+        <Image x:Name="ImageSwipe" Source="spider_man.png">
+            <Image.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Left"/>
+   
+            <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Right"/>
+       </Image.GestureRecognizers>
+        </Image>
+            <Label x:Name="Question" HorizontalOptions="Center" FontAttributes="Bold" Text="Question 1"/>
+            <Label  FontAttributes="Bold" Text=""/>
+            <Label FontAttributes="Bold" HorizontalOptions="Center" Text="Swipe Left for TRUE, Swipe Right for FALSE"/>
+            <Label  FontAttributes="Bold" Text=""/>
+            <Button x:Name="Clear" Text="Refresh" HorizontalOptions="Center" BackgroundColor="Brown" Clicked="Refresh_Clicked"/>
+            <Label  FontAttributes="Bold" Text=""/>
+        <Button Text="Clicker" VerticalOptions="Center" HorizontalOptions="Center" Clicked="OnButtonClicked"/>
+            <Label  FontAttributes="Bold" Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

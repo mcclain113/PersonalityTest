@@ -1,0 +1,1 @@
+C:\Users\051686\RiderProjects\PersonalityTest\PersonalityTest\PersonalityTest.csproj;x64
